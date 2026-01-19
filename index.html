@@ -1,18 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protfolio Website</title>
 
-    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/673/363/png-transparent-playbuzz-business-advertising-quiz-logo-favicon-purple-violet-text.png" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"
+    href="https://w7.pngwing.com/pngs/673/363/png-transparent-playbuzz-business-advertising-quiz-logo-favicon-purple-violet-text.png"
+    type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-    <!-- header -->
-    <!-- <div class="header sticky top-0  ">
+<body class="bg-[#181717]">
+
+  >
+  <!-- template -->
+  <!-- <div class="bg-gray-40">
+        <div class="container mx-auto max-w-[1200px] mt-4 sm:mt-10 max-[1200px]:px-4 p-3 border">
+
+        </div>
+
+       </div> -->
+
+
+  <!-- banner -->
+
+
+
+
+
+
+
+  <header class="bg-[#181717] fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto max-w-[1200px] px-4">
+
+      
+      <div class="flex justify-between items-center py-4">
+
+      
+        <div class="text-2xl font-bold text-white">
+          Esha
+        </div>
+
+        
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="text-white hover:text-gray-400 transition">Home</a>
+          <a href="#portfolio" class="text-white hover:text-gray-400 transition">Portfolio</a>
+          <a href="#services" class="text-white hover:text-gray-400 transition">Services</a>
+          <a href="#blog" class="text-white hover:text-gray-400 transition">Blog</a>
+          <a href="#contact" class="text-white hover:text-gray-400 transition">Contact</a>
+        </nav>
+
+        
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+     
+      <div id="menu" class="hidden md:hidden">
+        <a href="#home" class="block px-4 py-2 text-white hover:bg-gray-700 transition">Home</a>
+        <a href="#portfolio" class="block px-4 py-2 text-white hover:bg-gray-700 transition">Portfolio</a>
+        <a href="#services" class="block px-4 py-2 text-white hover:bg-gray-700 transition">Services</a>
+        <a href="#blog" class="block px-4 py-2 text-white hover:bg-gray-700 transition">Blog</a>
+        <a href="#contact" class="block px-4 py-2 text-white hover:bg-gray-700 transition">Contact</a>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+ <!-- banner -->
+  <div class="bg-[#181717]">
+    <div class="container mx-auto max-w-[1200px]  max-[1200px]:px-4 p-3 ">
+      <div class="banner  md:flex justify-center items-center gap-3 mt-10 ">
+        <div class="bannerleft">
+          <p class="text-white">HELLO, MY NAME IS</p>
+          <h2 class="text-white text-7xl font-bold">Shumin Nahar</h2>
+
+          <p class="my-4  text-white">
+            On the other hand, we denounce with righteous indignation and
+            dislike men who are so beguiled demord by.
+          </p>
+          <button
+            class="bg-gray-100 text-black rounded px-1 md:px-7 font-bold py-3 mt-5 md:mt-10 btn hover:bg-black hover:text-white"
+            type="button">
+            MY WORK
+          </button>
+        </div>
+        <div class="bannerright ">
+          <img class="w-[100%]" src="https://regaltheme.com/tf/onepage/mim/mim/assets/img/slider/layer2.png"
+            alt="image not found" />
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- about section -->
+  <div class="bg-[#414040]">
+    <div class="container mx-auto max-w-[1200px]  max-[1200px]:px-4 p-3 ">
+      <div class="mt-50 md:mt-0 pb-10 text-white">
+        <div class="abouttop text-center pt-10 text-2xl font-bold text-white">
+          ABOUT ME
+          <div class="h-1 bg-white w-[5%] mx-auto rounded mt-4"></div>
+          <div class="h-1 bg-white w-[10%] mx-auto rounded mt-2"></div>
+        </div>
+        <div class="md:grid grid-cols-[50%_30%] justify-between gap-10">
+          <div class="aboutleft">
+            <h1 class="text-2xl font-semibold mb-2 text-white">Howdy!</h1>
+            <p class="text-white">
+              On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by th charms of
+              pleasure of the moment, so blinded by desire, tht they cannot
+              foresee the pain and trouble that are
+            </p>
+            <button class="bg-gray-100 text-black rounded px-7 font-bold py-3 mt-10 btn hover:bg-black hover:text-white"
+              type="button">
+              DOWNLOAD MY CV
+            </button>
+          </div>
+          <div class="aboutright pt-6">
+            <!-- SKILL ITEM -->
+            <div>
+              <div class="flex justify-between text-white font-semibold mb-2">
+                <span>DESIGN</span>
+                <span>90%</span>
+              </div>
+
+              <div class="relative h-2 bg-gray-600 rounded-full">
+                <div class="absolute h-2 bg-white rounded-full w-[90%]"></div>
+                <div class="absolute right-[10%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <!-- SKILL ITEM -->
+            <div class="mt-2">
+              <div class="flex justify-between text-white font-semibold mb-2">
+                <span>HTML $ CSS</span>
+                <span>85%</span>
+              </div>
+
+              <div class="relative h-2 bg-gray-600 rounded-full">
+                <div class="absolute h-2 bg-white rounded-full w-[85%]"></div>
+                <div class="absolute right-[15%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
+              </div>
+            </div>
+            <!-- SKILL ITEM -->
+            <div class="mt-2">
+              <div class="flex justify-between text-white font-semibold mb-2">
+                <span>WORDPRESS</span>
+                <span>90%</span>
+              </div>
+
+              <div class="relative h-2 bg-gray-600 rounded-full">
+                <div class="absolute h-2 bg-white rounded-full w-[90%]"></div>
+                <div class="absolute right-[10%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- header -->
+  <!-- <div class="header sticky top-0  ">
         <div class="left text-7xl font-bold ml-10 py-6">
             Esha
         </div>
@@ -20,95 +197,6 @@
 
         </div>
     </div> -->
-
-    <!-- banner -->
-     <div class="banner relative  md:flex justify-center items-center mx-10 gap-3 mt-10 z-10">
-        <div class="bannerleft">
-            <p class="greytex">HELLO, MY NAME IS</p>
-            <h2 class="text-7xl font-bold">Shumin Nahar</h2>
-
-            <p class="my-4 w-[40vw] greytex ">
-                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demord by.
-            </p>
-            <button class="bg-gray-100 text-black rounded px-7 font-bold py-3 mt-10 btn hover:bg-black
-             hover:text-white" type="button">MY WORK</button>
-
-
-        </div>
-        <div class="bannerright absolute  top-60 right-0 md:static ">
-            <img 
-            class="w-50 md:w-[100%] "
-            src="https://regaltheme.com/tf/onepage/mim/mim/assets/img/slider/layer2.png" alt="image not found">
-
-        </div>
-     </div>
-
-
-     <!-- about section -->
-
-     <section class="mt-50 md:mt-0 bg-black pb-10 ">
-        <div class="abouttop text-center pt-10 text-2xl font-bold">
-            ABOUT ME
-            <div class="h-1  bg-gray-600 w-[5%] mx-auto  rounded mt-4"></div>
-            <div class="h-1  bg-gray-600 w-[10%] mx-auto rounded mt-2"></div>
-        </div>
-        <div class="md:grid grid-cols-2  mx-10 md:mx-20 gap-10 pt-20">
-            <div class="aboutleft">
-                <h1 class="text-2xl font-semibold mb-2">Howdy!</h1>
-                <p class="greytex">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by th charms of pleasure of the moment, so blinded by desire, tht they cannot foresee the pain and trouble that are</p>
-                 <button class="bg-gray-100
-                  text-black rounded px-7 font-bold py-3 mt-10 btn hover:bg-black
-             hover:text-white" type="button">DOWNLOAD MY CV</button>
-
-            </div>
-            <div class="aboutright pt-6">
-
-                <!-- SKILL ITEM -->
-  <div>
-    <div class="flex justify-between text-white font-semibold mb-2">
-      <span>DESIGN</span>
-      <span>90%</span>
-    </div>
-
-    <div class="relative h-2 bg-gray-600 rounded-full">
-      <div class="absolute h-2 bg-white rounded-full w-[90%]"></div>
-      <div class="absolute right-[10%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
-    </div>
-  </div>
-                <!-- SKILL ITEM -->
-  <div class="mt-2">
-    <div class="flex justify-between text-white font-semibold mb-2">
-      <span>HTML $ CSS</span>
-      <span>85%</span>
-    </div>
-
-    <div class="relative h-2 bg-gray-600 rounded-full">
-      <div class="absolute h-2 bg-white rounded-full w-[85%]"></div>
-      <div class="absolute right-[15%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
-    </div>
-  </div>
-                <!-- SKILL ITEM -->
-  <div class="mt-2">
-    <div class="flex justify-between text-white font-semibold mb-2">
-      <span>WORDPRESS</span>
-      <span>90%</span>
-    </div>
-
-    <div class="relative h-2 bg-gray-600 rounded-full">
-      <div class="absolute h-2 bg-white rounded-full w-[90%]"></div>
-      <div class="absolute right-[10%] top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full"></div>
-    </div>
-  </div>
-                
-                
-
-            </div>
-        </div>
-        
-
-     </section>
-
-    
-    
 </body>
+
 </html>
